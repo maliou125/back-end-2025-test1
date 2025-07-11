@@ -19,7 +19,7 @@ const changeHandler = (e)=>{
 const login = async ()=>{
    console.log("Login funtion execuet",formData);
    let responseData;
-   await fetch('http://localhost:4000/login',{
+   await fetch('https://mini-store-backend-v1.onrender.com/login',{
     method:'POST',
     headers:{
       Accept:'application/form-data',
@@ -42,7 +42,7 @@ const login = async ()=>{
 const signup = async ()=>{
   console.log("signup funtion execuet",formData);
   let responseData;
-   await fetch('http://localhost:4000/signup',{
+   await fetch('https://mini-store-backend-v1.onrender.com/signup',{
     method:'POST',
     headers:{
       Accept:'application/form-data',
