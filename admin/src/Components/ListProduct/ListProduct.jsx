@@ -8,7 +8,7 @@ const ListProduct = () => {
 const[allproducts,setAllProducts] = useState([]);
 
 const fetchInfo = async ()=>{
-  await fetch('http://localhost:4000/allproducts')
+  await fetch('https://mini-store-backend-v1.onrender.com/allproducts')
   .then((res)=>res.json())
   .then((data)=>{setAllProducts(data)});
 }
@@ -19,7 +19,7 @@ useEffect(()=>{
 
 
 const remove_product = async(id)=>{
-  await fetch('http://localhost:4000/removeproduct',{
+  await fetch('https://mini-store-backend-v1.onrender.com/removeproduct',{
     method: 'POST',
     headers:{
       Accept:'application/json',
